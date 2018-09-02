@@ -30,7 +30,7 @@ class PhotonOsmConnector {
 
     /**
      * @param $name
-     * @param array $filter
+     * @param array $filter the filter allows to reduce the results to certain types
      * @return array
      */
     public function searchLocation ($name, $filter = []) {
@@ -42,13 +42,31 @@ class PhotonOsmConnector {
 
         $options['q'] = $name;
 
-        $response = $this->client->request('GET', '/', ['query' => $options]);
+        $response = $this->client->request('GET', '',['query' => $options]);
 
         if ($response->getStatusCode() == '200') {
-            print_r($response->getBody());
+            return $this->filterResult(json_decode($response->getBody()->getContents(), true)['features'], $filter);
         }
 
         return [];
+    }
+
+
+    public function filterResult ($featuresArray, $filter = []) {
+
+
+        foreach ($filter as $key => $allowedValues) {
+            $filteredResult = [];
+            foreach ($featuresArray as $entry) {
+                if (array_key_exists($key, $entry['properties']) && in_array($entry['properties'][$key], $allowedValues)) {
+                    $filteredResult[] = $entry;
+                }
+            }
+
+            $featuresArray = $filteredResult;
+        }
+
+        return $featuresArray;
     }
 
 }
