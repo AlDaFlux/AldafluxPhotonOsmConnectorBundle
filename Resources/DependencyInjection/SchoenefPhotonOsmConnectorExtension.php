@@ -29,7 +29,7 @@ class SchoenefPhotonOsmConnectorExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('schoenef_phton_osm', $config);
+        $container->setParameter('schoenef_photon_osm', $config);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
