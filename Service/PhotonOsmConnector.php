@@ -4,7 +4,7 @@ namespace Schoenef\PhotonOsmConnectorBundle\Service;
 
 
 use GuzzleHttp\Client;
-use Schoenef\PhotonOsmBundle\DependencyInjection\Configuration;
+use Schoenef\PhotonOsmConnectorBundle\DependencyInjection\Configuration;
 
 class PhotonOsmConnector {
 
