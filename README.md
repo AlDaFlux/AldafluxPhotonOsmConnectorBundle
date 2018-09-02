@@ -34,7 +34,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new Schoenef\PhotonOsmConnectorBundle\SchoenefPhotonOsmConnectorBundle(), // takes care of html to pdf conversion via third party services
+            new Schoenef\PhotonOsmConnectorBundle\SchoenefPhotonOsmConnectorBundle(), // geo coding service wrapper
         );
 
         // ...
@@ -48,7 +48,7 @@ class AppKernel extends Kernel
 
 Add the following configuration to your ```app/config/config.yml```:
 ```yml
-schoenef_photon_osm:
+schoenef_photon_osm_connector:
   timeout: 20
   lang: de
 ```
