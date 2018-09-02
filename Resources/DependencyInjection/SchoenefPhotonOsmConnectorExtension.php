@@ -9,6 +9,8 @@
 namespace Schoenef\PhotonOsmConnectorBundle\DependencyInjection;
 
 
+die('om');
+
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
