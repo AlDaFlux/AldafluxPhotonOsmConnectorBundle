@@ -42,7 +42,7 @@ class PhotonOsmConnector {
 
         $options['q'] = $name;
 
-        $response = $this->client->request('GET', '/pdf', ['query' => $options]);
+        $response = $this->client->request('GET', '/', ['query' => $options]);
 
         if ($response->getStatusCode() == '200') {
             print_r($response->getBody());
