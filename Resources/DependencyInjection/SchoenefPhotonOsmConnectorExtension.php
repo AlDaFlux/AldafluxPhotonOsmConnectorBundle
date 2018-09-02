@@ -18,7 +18,7 @@ use Symfony\Component\DependencyInjection\Loader;
  * This is the class that loads and manages your bundle configuration
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class PhotonOsmConnectorExtension extends Extension
+class SchoenefPhotonOsmConnectorExtension extends Extension
 {
 
     /**
@@ -29,7 +29,7 @@ class PhotonOsmConnectorExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('photon_osm_connector', $config);
+        $container->setParameter('schoenef_photon_osm_connector', $config);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
