@@ -1,0 +1,4 @@
+services:
+  photon_osm.connector:
+    class: Schoenef\PhotonOsmBundle\Service\PhotonOsmConnector
+    arguments: ['%schoenef_phton_osm%']

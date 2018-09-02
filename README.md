@@ -1,2 +1,2 @@
 # PhotonOsmConnectorBundle
-Aloows to easily use the [Photon API](https://photon.komoot.de/) in your symphony project.
+Allows to easily use the [Photon API](https://photon.komoot.de/) in your symphony project.
