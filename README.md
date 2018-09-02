@@ -48,7 +48,7 @@ class AppKernel extends Kernel
 
 Add the following configuration to your ```app/config/config.yml```:
 ```yml
-schoenef_phton_osm:
+schoenef_photon_osm:
   timeout: 20
   lang: de
 ```
