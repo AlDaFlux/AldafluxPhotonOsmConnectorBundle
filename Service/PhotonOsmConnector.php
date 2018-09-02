@@ -5,7 +5,6 @@ namespace Schoenef\PhotonOsmBundle\Service;
 
 use GuzzleHttp\Client;
 use Schoenef\PhotonOsmBundle\DependencyInjection\Configuration;
-use Symfony\Component\Filesystem\Filesystem;
 
 class PhotonOsmConnector {
 
