@@ -36,7 +36,7 @@ class Configuration implements ConfigurationInterface {
     {
         $treeBuilder = new TreeBuilder();
         // the root must be the name of the bundle: http://stackoverflow.com/a/35505189/2776727
-        $rootNode = $treeBuilder->root('schoenef_photon_osm_connector');
+        $rootNode = $treeBuilder->root('photon_osm_connector');
 
         $rootNode
             ->children()
