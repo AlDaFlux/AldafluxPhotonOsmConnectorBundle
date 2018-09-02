@@ -6,7 +6,7 @@
  * Time: 16:05
  */
 
-namespace Schoenef\PhotonOsmBundle\DependencyInjection;
+namespace Schoenef\PhotonOsmConnectorBundle\DependencyInjection;
 
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -29,7 +29,7 @@ class SchoenefPhotonOsmConnectorExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('schoenef_photon_osm', $config);
+        $container->setParameter('schoenef_photon_osm_connector', $config);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');

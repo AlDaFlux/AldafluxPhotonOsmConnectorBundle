@@ -34,7 +34,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new Schoenef\PhotonOsmBundle\SchoenefPhotonOsmBundle(), // takes care of html to pdf conversion via third party services
+            new Schoenef\PhotonOsmConnectorBundle\SchoenefPhotonOsmConnectorBundle(), // takes care of html to pdf conversion via third party services
         );
 
         // ...

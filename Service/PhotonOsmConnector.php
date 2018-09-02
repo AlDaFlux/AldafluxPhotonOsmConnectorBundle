@@ -1,6 +1,6 @@
 <?php
 
-namespace Schoenef\PhotonOsmBundle\Service;
+namespace Schoenef\PhotonOsmConnectorBundle\Service;
 
 
 use GuzzleHttp\Client;
