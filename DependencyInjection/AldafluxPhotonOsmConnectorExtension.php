@@ -21,7 +21,7 @@ class AldafluxPhotonOsmConnectorExtension extends Extension
 
         $container->setParameter( 'aldaflux_photon_osm_connector', $config );
 
-         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yml');
 
                 
