@@ -1,0 +1,5 @@
+services:
+  photon_osm.connector:
+    class: Aldaflux\PhotonOsmConnectorBundle\Service\PhotonOsmConnector
+    arguments: ['%aldaflux_photon_osm_connector%']
+
