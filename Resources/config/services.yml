@@ -1,0 +1,8 @@
+services:
+   photon_osm.connector:
+        class: Aldaflux\AldafluxPhotonOsmConnectorBundle\Service\PhotonOsmConnector
+        arguments: ['%aldaflux_photon_osm_connector%']
+        public: true
+        autowire: true
+   Aldaflux\AldafluxPhotonOsmConnectorBundle\Service\PhotonOsmConnector: '@photon_osm.connector'
+
